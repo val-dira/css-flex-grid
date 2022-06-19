@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID -- 3-column card</title>
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            background: cadetblue;
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            /* grid-template-rows: repeat(3, 747px); */
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        img {
+            width: 30px;
+        }
+
+
+        h2 {
+            color: #fcfcfc;
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            font: 32px oswald;
+            padding: 20px 0;
+            
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            color: #ccc;
+            padding-bottom: 30px;
+            max-width: 206px;
+        }
+
+        button {
+            width: 120px;
+            padding: 15px;
+            color: rgb(248, 157, 10);
+            border-radius: 30px;
+            background: #fcfcfc;
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+    </style>
+
+<body>
+    <section class="sedans" style="background: rgb(248, 157, 10);">
+        <header>
+            <img src="../css flex-grid/images/icon-sedans.svg" alt="car">
+
+        </header>
+
+        
+        <article class="text">
+            <h2>SEDANS</h2>
+            <p>Choose a sedan for its affordability aand excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+        </article>
+        
+        <button>Learn More</button>
+    </section>
+
+    <!-- ////////////////////////////////////////////////// -->
+    <section class="suvs" style="background: rgb(3, 97, 99);">
+        <header>
+            <img src="../css flex-grid/images/icon-suvs.svg" alt="car">
+
+        </header>
+
+        
+        <article class="text">
+            <h2>SUVS</h2>
+            <p>Choose a sedan for its affordability aand excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+        </article>
+        
+        <button style="color: rgb(5, 167, 169);">Learn More</button>
+    </section>
+<!-- //////////////////////////////////////////////////////// -->
+    <section class="luxury"  style="background: rgb(2, 64, 66);">
+        <header class="luxury">
+            <img src="../css flex-grid/images/icon-luxury.svg" alt="car">
+
+        </header>
+
+        
+        <article class="text">
+            <h2>LUXURY</h2>
+            <p>Choose a sedan for its affordability aand excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+        </article>
+        
+        <button style="color: rgb(2, 64, 66);">Learn More</button>
+    </section>
+
+</body>
+</html>
